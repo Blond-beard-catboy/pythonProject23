@@ -16,7 +16,7 @@ try:
     while buffer[-2:] != b'\r\n':
         data = connection.recv(2)
         if not data:
-            breake
+            break
         else:
             print(f'Получены данные: {data}!')
             buffer = buffer + data
